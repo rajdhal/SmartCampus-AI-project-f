@@ -1,1 +1,0 @@
-# SmartCampus-AI-project

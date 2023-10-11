@@ -3,10 +3,13 @@ from PIL import Image
 
 model = YOLO('runs/detect/train/weights/best.pt')  # load a custom model
 
+
 images = []
 for i in range(4190, 4263):
     images.append(f'test2/Images/IMG_{i}.JPEG'.format(i))
-    
+
+# test = 'test2/Images/IMG_4190.JPEG'
+
 # Run inference on 'bus.jpg'
 results = model(images)  # results list
 
